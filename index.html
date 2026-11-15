@@ -372,6 +372,52 @@ dialog label{display:block;font-size:.9rem;margin-bottom:6px}
 
         <aside class="panel" aria-label="Прогресс">
           <div class="progress-ring" id="progressRing"><strong id="progressText">0%</strong></div>
+          <div class="stat-row"><span>Всего задач</span><strong id="statTotal">0</strong></div>
+          <div class="stat-row"><span>Выполнено</span><strong id="statDone">0</strong></div>
+          <div class="stat-row"><span>Срочных (до 2 дней)</span><strong id="statSoon">0</strong></div>
+          <div class="stat-row" style="display:block"><span>Минуты фокуса</span>
+            <div class="bar" aria-hidden="true"><i id="focusBar"></i></div>
+            <p id="focusText" style="color:var(--muted);font-size:.9rem;margin-top:6px">0 из 100 минут</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" aria-labelledby="features-title">
+    <div class="container">
+      <div class="section-head">
+        <div class="tag"><span>Возможности</span></div>
+        <h2 id="features-title">Четыре проблемы учёбы — четыре решения</h2>
+        <p class="lead">Каждый инструмент отвечает на конкретную ситуацию: забыл задание, не вижу срок, не понимаю прогресс, не могу сосредоточиться.</p>
+      </div>
+      <div class="features">
+        <article class="feature"><div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg></div><h3>Не забудете задания</h3><p>Записывайте, например, «Подготовиться к экзамену по физике» с приоритетом и сроком.</p></article>
+        <article class="feature"><div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg></div><h3>Увидите срочное заранее</h3><p>Задачи со сроком в ближайшие 2 дня подсвечиваются и считаются отдельно.</p></article>
+        <article class="feature"><div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7"/></svg></div><h3>Поймёте, сколько сделано</h3><p>Кольцо показывает долю выполненных задач, шкала — минуты фокуса за сессию.</p></article>
+        <article class="feature"><div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 3h6"/></svg></div><h3>Сосредоточитесь на деле</h3><p>Интервалы 25/5 минут или своё время до 180 минут.</p></article>
+      </div>
+      <figure class="media-band">
+        <img src="study_.jpg" alt="Учебный день студента: план занятий, конспекты и таймер фокуса" width="736" height="552" loading="lazy">
+        <figcaption>Один экран вместо заметок в шести приложениях: задачи, дедлайны и фокус рядом</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="pricing" aria-labelledby="pricing-title">
+    <div class="container">
+      <div class="section-head center">
+        <div class="tag"><span>Тарифы</span></div>
+        <h2 id="pricing-title">Бесплатно для старта, платно для большего</h2>
+        <p class="lead">Тарифы демонстрационные: реальная оплата не подключена.</p>
+      </div>
+      <div class="pricing">
+        <article class="plan" data-plan="Базовый">
+          <h3>Базовый</h3><p class="plan-desc">Для первых шагов.</p>
+          <p class="price">0 ₽<small> / мес</small></p>
+          <ul><li>До 20 активных задач</li><li>Таймер фокуса</li><li>Список дедлайнов</li></ul>
+          <a class="btn btn-ghost" href="#demo">Начать бесплатно</a>
+        </article>
           
         <article class="plan featured" data-plan="Студент">
           <h3>Студент</h3><p class="plan-desc">Для регулярного планирования.</p>
