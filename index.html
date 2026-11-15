@@ -705,12 +705,7 @@ dialog label{display:block;font-size:.9rem;margin-bottom:6px}
   /* ---------- Тарифы ---------- */
   const dlg = $('#planDialog'), plans = $$('.plan');
   let chosen = null;
-  function selectPlan(p) { plans.forEach(x => x.classList.toggle('selected', x === p)); }
-  $$('[data-choose]').forEach(btn => btn.addEventListener('click', () => {
-    chosen = btn.closest('.plan');
-    $('#dlgTitle').textContent = 'Тариф «' + chosen.dataset.plan + '»';
-    if (typeof dlg.showModal === 'function') dlg.showModal();
-    else { selectPlan(chosen); showToast('Выбран тариф «' + chosen.dataset.plan + '»'); }
+ 
   }));
   dlg.addEventListener('close', () => {
     if (dlg.returnValue === 'ok' && chosen) {
